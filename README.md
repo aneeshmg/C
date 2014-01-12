@@ -17,4 +17,8 @@ CaesarCipher
 * To change the algorithm, change the value of the "DISP" macro in both the files
 * Usage: You and the receiver must know the password...knowing the password, sender sends the encrypted 'message' file along with the executable of the decrypter and Voila at the receivers end!
 
-
+JumpSearch
+------------------------------------
+* A simple, efficient search algorithm
+* Requires the array to be sorted
+* The algorithm mimics a human searching for a page in a book without using the contents/index
