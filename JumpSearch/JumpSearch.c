@@ -2,15 +2,15 @@
 #define N 256
 int main() {
 
-  float array[N];
+  float   array[N];
   int     D             =   0;
   int     check         =   0;
   float   element       =   0.0;
   int     sizeOfArray   =   0;
   int     i             =   0;
   int     presentFlag   =   1;
-  int     left          =   0;
-  int     right         =   0;
+  int     left          =   -1;
+  int     right         =   -1;
 
   printf("Enter the size of the array\n");
   scanf("%d",&sizeOfArray);
@@ -27,14 +27,17 @@ int main() {
   D     = array[sizeOfArray-1] - array[0];
   check = ((element * sizeOfArray) / D) - 1;
 
+  if(check < 0)
+    check = 0;
+
   while(array[check] != element && presentFlag) {
     if(array[check] > element) {
       check--;
-      left = 1;
+      left=check;
     }
     else {
+      right=check;
       check++;
-      right = 1;
     }
     if(left == right)
       presentFlag = 0;
