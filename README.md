@@ -22,3 +22,5 @@ JumpSearch
 * A simple, efficient search algorithm
 * Requires the array to be sorted
 * The algorithm mimics a human searching for a page in a book without using the contents/index
+* The algorithm is most efficient(better than BinarySearch) when the difference between successive elements of the array is close to the value (array[N] / N), where N is size of array
+ * The algorithm is always better than LinearSearch and can outperform BinarySearch under the above mentioned condition
