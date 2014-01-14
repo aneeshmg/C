@@ -30,6 +30,8 @@ int main() {
   if(check < 0)
     check = 0;
 
+  //i=0;                                Uncomment this line to check the number of iterations required to perform the search
+
   while(array[check] != element && presentFlag) {
     if(array[check] > element) {
       check--;
@@ -41,6 +43,8 @@ int main() {
     }
     if(left == right)
       presentFlag = 0;
+
+    //printf("Iteration %d\n",++i);     Uncomment this line to check the number of iterations required to perform the search
   }
 
   for(i = 0; i < sizeOfArray; i++) {
