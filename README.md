@@ -29,6 +29,7 @@ Regular Expression Evaluator
 ------------------------------------
 * A simple regular expression evaluator
 * Takes in a regular expression and a string and evaluates the string according to the regular expression entered and returns boolean
+* (work in progress)
 
 DateToDay Converter
 ------------------------------------
