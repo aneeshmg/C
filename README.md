@@ -33,4 +33,6 @@ Regular Expression Evaluator
 DateToDay Converter
 ------------------------------------
 * A simple date-day converter
-* Takes in the date in the format dd/mm/yy and outputs the 'day'
+* Takes in the date in the format dd/mm/yy and outputs the 'day'.
+* Eg: Ip: 18 01 2014
+Op: This is a Saturday.
