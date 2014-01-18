@@ -24,3 +24,13 @@ JumpSearch
 * The algorithm mimics a human searching for a page in a book without using the contents/index
 * The algorithm is most efficient(better than BinarySearch) when the difference between successive elements of the array is close to the value (array[N] / N), where N is size of array
 * The algorithm is always better than LinearSearch and can outperform BinarySearch under the above mentioned condition
+
+Regular Expression Evaluator
+------------------------------------
+* A simple regular expression evaluator
+* Takes in a regular expression and a string and evaluates the string according to the regular expression entered and returns boolean
+
+DateToDay Converter
+------------------------------------
+* A simple date-day converter
+* Takes in the date in the format dd/mm/yy and outputs the 'day'
