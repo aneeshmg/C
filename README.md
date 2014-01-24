@@ -27,7 +27,7 @@ JumpSearch
 
 Regular Expression Evaluator
 ------------------------------------
-* A simple regular expression evaluator
+* A simple regular expression evaluator (Supports only 'star' and 'plus' R.E symbols
 * Takes in a regular expression and a string and evaluates the string according to the regular expression entered and returns boolean
 * (work in progress)
 

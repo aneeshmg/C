@@ -23,10 +23,10 @@ int main() {
           break;
 
         case 2: if(eyr % 4 == 0) {
-                date += 29;
-              }
-              else
-                date += 28;
+                  date += 29;
+                }
+                else
+                  date += 28;
           break;
 
         case 3: date += 31;
@@ -79,6 +79,7 @@ int main() {
     printf("The entered year is out of range!\n");
 
   day = date % 7;
+
   switch(day) {
     case 1: printf("The day is a Saturday\n");
       break;
@@ -103,4 +104,6 @@ int main() {
 
     default: break;
    }
+
+   return 0;
 }
