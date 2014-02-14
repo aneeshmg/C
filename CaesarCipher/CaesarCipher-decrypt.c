@@ -19,7 +19,7 @@ int main() {
   scanf("%s",epass);
 
   if(!strcmp(pass, epass))  {
-    textFile = fopen("message.txt","r");
+    textFile = fopen("message.txt", "r");
     fseek(textFile, 0L, SEEK_END);
     size = ftell(textFile);
     fseek(textFile, 0L, SEEK_SET);
@@ -30,7 +30,7 @@ int main() {
       input[i] -= DISP;
     }
 
-    textFile = fopen("message.txt","w");
+    textFile = fopen("message.txt", "w");
     fwrite(input, 1, size, textFile);
     fclose(textFile);
     printf("Successfully decrypted!\n");

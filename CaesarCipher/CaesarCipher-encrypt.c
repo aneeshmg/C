@@ -7,10 +7,10 @@ int main() {
   int size          =   0;
   int i             =   0;
 
-  FILE *textFile    = NULL;
+  FILE *textFile    =   NULL;
   char input[1024];
 
-  textFile = fopen("message.txt","r");
+  textFile = fopen("message.txt", "r");
   fseek(textFile, 0L, SEEK_END);
   size = ftell(textFile);
   fseek(textFile, 0L, SEEK_SET);
