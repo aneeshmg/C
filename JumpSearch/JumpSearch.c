@@ -17,12 +17,12 @@ int main() {
   printf("Note: The array needs to be sorted\n");
 
   for(i = 0; i < sizeOfArray; i++) {
-    printf("Enter the %d element\n",i+1);
-    scanf("%f",&array[i]);
+    printf("Enter the %d element\n", i+1);
+    scanf("%f", &array[i]);
   }
 
   printf("Enter the element to be searched\n");
-  scanf("%f",&element);
+  scanf("%f", &element);
 
   D     = array[sizeOfArray-1] - array[0];
   check = ((element * sizeOfArray) / D) - 1;
@@ -35,10 +35,10 @@ int main() {
   while(array[check] != element && presentFlag) {
     if(array[check] > element) {
       check--;
-      left=check;
+      left = check;
     }
     else {
-      right=check;
+      right = check;
       check++;
     }
     if(left == right)
@@ -48,11 +48,11 @@ int main() {
   }
 
   for(i = 0; i < sizeOfArray; i++) {
-    printf("\t%d => %.2f\n",i+1,array[i]);
+    printf("\t%d => %.2f\n", i+1, array[i]);
   }
 
   if(presentFlag)
-    printf("\nElement %.2f found in position %d\n",element,check+1);
+    printf("\nElement %.2f found in position %d\n", element, check+1);
   else
-    printf("\nElement %.2f does not exist\n",element);
+    printf("\nElement %.2f does not exist\n", element);
 }
